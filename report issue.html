@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .report-issue {
+            background-image: url(images/c6a02467566b36b7c41c477661c992e3.jpg);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .report-issue h2 {
+            color: #f70808;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .report-issue p {
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .report-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .report-form input,
+        .report-form select,
+        .report-form textarea {
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+            transition: border 0.3s ease;
+        }
+
+        .report-form input:focus,
+        .report-form select:focus,
+        .report-form textarea:focus {
+            border-color: #1f6b44;
+            outline: none;
+        }
+
+        .report-form button {
+            background-color: #1f6b44;
+            color: white;
+            padding: 14px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .report-form button :hover {
+            background-color: #f00909;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="report-issue">
+        <h2>Report an Issue</h2>
+        <p class="text-dark">
+            This section allows community members to report issues that affect their daily lives.
+            These may include health concerns, road safety problems, water shortages, or other community-related
+            challenges.
+        </p>
+
+        <form action="">
+            <fieldset>
+                <legend class="bg-danger">Personal details</legend>
+                <input type="text" name="name" placeholder="Full Name"><br><br>
+                <input type="email" name="email" placeholder="Email Address"><br><br>
+                <select name="category" required>
+                    <option value="">Select Issue Category</option><br><br>
+                    <option value="health">Health</option><br><br>
+                    <option value="road">Road Safety</option><br><br>
+                    <option value="water">Water Shortage</option><br><br>
+                    <option value="other">Other</option>
+                </select><br><br><br>
+                <textarea name="message" placeholder="Describe the issue" rows="5" required></textarea>
+                <br><br><br>
+                <input type="Submit" value="Submit" class="btn btn-outline-danger ">
+            </fieldset>
+
+        </form>
+    </section>
+
+</body>
+
+</html>

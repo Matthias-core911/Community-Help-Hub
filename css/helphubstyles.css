@@ -1,4 +1,22 @@
-.btn:hover{
+.btn:hover {
     background-color: rgb(9, 236, 28);
     transform: scale(1.05);
+}
+
+.navbar {
+    background-color: #0ee720;
+    padding: 5px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #069af0;
+    border-bottom: 5px solid #0a45e9;
 }

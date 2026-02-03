@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .section-bg {
+            background-image: url("images/_ (1).jpeg");
+            /* your image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        h2 {
+            font-family: "Arial", Arial, Helvetica, sans-serif;
+            color: #06abec;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            position: relative;
+        }
+
+        h2::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: #0eeb32;
+            bottom: -6px;
+            left: 0;
+            transition: width 0.9s ease;
+        }
+
+        h2:hover::after {
+            width: 150px;
+        }
+
+        p {
+            color: white;
+        }
+
+        .my-list li {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="about" class="about-us section-bg">
+        <h2 class="bg-success text-black">About Us</h2>
+        <p class="text-light">Comunity Help Hub is a community-focused platform created to bring people together
+            through support,
+            awareness, and shared responsibility. The website serves as a central space where individuals can access
+            important information, offer help, and participate in activities that improve the quality of life within the
+            community. <br>
+
+            Our goal is to strengthen communities by promoting health education, safety awareness, and volunteer
+            involvement. We believe that when people are informed and connected, they are better equipped to respond to
+            challenges such as health concerns, road safety issues, water shortages, and emergency situations. <br>
+
+            Community Help Hub provides timely announcements, practical health tips, and opportunities for individuals
+            to contribute their time and skills. Through volunteer programs such as first aid support, teaching
+            children, and community outreach, we encourage active participation and collective action. <br>
+
+            The platform is designed to be simple, accessible, and reliable for everyone. Whether you are seeking
+            information, looking to help others, or wanting to be part of a positive change, Community Help Hub exists
+            to support you and your community.</p><br>
+        <h2>Our mission</h2>
+        <p>Our mission is to bring people together to support one another through community service, awareness, and
+            timely assistance. We aim to improve lives by promoting health, safety, education, and unity within the
+            community.</p>
+        <br>
+        <h2>CORE VALUES</h2>
+        <ol type="I">
+            <li>Care and compassion</li>
+            <li>Teamwork and unity</li>
+            <li>Responsibility and trust</li>
+            <li>Respect for all people</li>
+        </ol>
+        <h2>Why It Matters</h2>
+        <p class="container-fluid">Small actions can create big change. By connecting people and sharing information,
+            Community Help Hub helps reduce risks, improve awareness, and strengthen community bonds.</p><br>
+        <h2>Call to action</h2>
+        <p>Join us in making our community safer, healthier, and stronger. Together, we can make a difference.</p>
+    </section>
+
+</body>
+
+</html>
